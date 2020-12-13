@@ -1,6 +1,6 @@
 use casbin::prelude::*;
 
-#[async_std::main]
+#[tokio::main]
 async fn main() -> Result<()> {
     let mut e = Enforcer::new(
         "examples/rbac_with_domains_model.conf",
